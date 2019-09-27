@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<documento>
+    <titulo>Faltas</titulo>
+    <faq_list>
+        <faq>
+            <fonte>IGT</fonte>
+            <perguntas>
+                <pergunta>O que são faltas?</pergunta>
+                <pergunta>Qual é a definição de faltas?</pergunta>
+                <pergunta>Como se define faltas?</pergunta>
+                <pergunta>O que caracteriza faltas?</pergunta>
+            </perguntas>
+            <resposta>
+                São as ausências do trabalhador no local de trabalho e durante o período em que devia desempenhar a sua actividade. Podem ainda ser períodos inferiores ao período diário, os quais se somam até perfazer um dia de trabalho para efeitos de uma falta.
+                Nos casos em que os períodos diários sejam variáveis, conta como dia completo de trabalho o de menor duração.
+            </resposta>
+        </faq>
+        <faq>
+            <fonte>IGT</fonte>
+            <perguntas>
+                <pergunta>Quais são as faltas justificadas e injustificadas?</pergunta>
+                <pergunta>O que são faltas justificadas e injustificadas?</pergunta>
+                <pergunta>O que caracterizam as faltas justificadas e injustificadas?</pergunta>
+                <pergunta>Como se define as faltas justificadas e injustificadas</pergunta>
+            </perguntas>
+            <resposta>
+                São faltas justificadas as dadas:
+                - Por casamento - durante 15 dias seguidos;
+                - Por falecimento do cônjuge, pai, mãe, filho ou filha, padrasto, madrasta, enteado, sogro, sogra, genro e nora ou pessoa que viva em união de facto com o trabalhador - durante cinco dias seguidos;
+                - Por falecimento dos avós, bisavós, netos, bisnetos, irmãos e cunhados - durante dois dias seguidos;
+                - Por frequência de aulas ou prestação de provas em estabelecimento de ensino;
+                - Por doença, acidente ou cumprimento de obrigações legais;
+                - Por necessidade de prestação de assistência inadiável e imprescindível em caso de doença ou acidente de filhos, adoptados ou enteados, menores de 10 anos, ou independentemente da idade caso sejam portadores de deficiência ou doença crónica, até 30 dias por ano.
+                - Para assistência a netos, que sejam filhos de adolescentes que convivam com o trabalhador - até 30 dias seguidos após o nascimento.
+                - Para deslocação à escola do responsável pela educação do menor - uma vez por trimestre e até quatro horas.
+                - Para desempenho de funções pelos trabalhadores eleitos para estruturas representativas dos trabalhadores que excedam o crédito de horas;
+                - Para campanha eleitoral dos candidatos a cargos públicos - durante o período da campanha; Por serem autorizadas ou aprovadas pelo empregador;
+                - Ainda serão justificadas outras faltas assim qualificadas por lei.
+                São faltas injustificadas as restantes.
+            </resposta>
+        </faq>
+        
+        <faq>
+            <fonte>IGT</fonte>
+            <perguntas>
+                <pergunta>Podem as convenções colectivas considerar como justificadas outras faltas?</pergunta>
+                <pergunta>Segundo as convenções colectivas podem ser justificadas outras faltas?</pergunta>
+                <pergunta>As convenções colectivas consideram como justificadas outras faltas? </pergunta>
+                <pergunta>As convenções colectivas consideram-se como justificadas outras faltas?</pergunta>
+            </perguntas>
+            <resposta>
+                Não. As convenções apenas podem dispor sobre as faltas dadas pelos trabalhadores eleitos para as estruturas de representação colectiva. Podem, no entanto, ser estabelecidas outras faltas no contrato individual de cada trabalhador.
+            </resposta>
+        </faq>
+        <faq>
+            <fonte>IGT</fonte>
+            <perguntas>
+                <pergunta> Quando deve ser feita a comunicação da falta justificada?</pergunta>
+                <pergunta> Quando é preciso comunicar a falta justificada?</pergunta>
+                <pergunta> Quando se comunica a falta justificada?</pergunta>
+                <pergunta> Quando se faz a comunicação da falta justificada?</pergunta>
+            </perguntas>
+            <resposta>
+                As faltas previsíveis têm de ser comunicadas com cinco dias de antecedência. As imprevisíveis logo que possível. Se à comunicação das faltas se seguirem imediatamente outras, tem de ser feita também a respectiva comunicação ao empregador. A falta de comunicação ou a oposição à fiscalização da doença pelo médico leva à injustificação da falta.
+            </resposta>
+        </faq>
+        <faq>
+            <fonte>IGT</fonte>
+            <perguntas>
+                <pergunta> Como pode o empregador exigir a justificação da falta?</pergunta>
+                <pergunta> Como deve o empregador exigir a justificação da falta?        </pergunta>
+                <pergunta> Como é que o empregador exige a justificação da falta?        </pergunta>
+                <pergunta> Como faz o empregador a exigência da justificação da falta?        </pergunta>
+            </perguntas>
+            <resposta> O empregador pode, nos 15 dias seguintes à comunicação das faltas, exigir ao trabalhador a prova. A prova da situação de doença é feita por estabelecimento hospitalar, por declaração do centro de saúde ou por atestado médico e que pode ser fiscalizada por médico, mediante requerimento do empregador dirigido à segurança social.
+                No caso de a segurança social não indicar o médico no prazo de vinte e quatro horas, o empregador designa o médico para efectuar a fiscalização, não podendo este ter qualquer vínculo contratual anterior ao empregador. Em caso de desacordo entre os pareceres médicos pode ser requerida a intervenção de junta médica. A apresentação ao empregador de declaração médica com intuito fraudulento constitui falsa declaração para efeitos de justa causa de despedimento.            </resposta>
+        </faq>
+        <faq>
+            <fonte>IGT</fonte>
+            <perguntas>
+                <pergunta> Serão as faltas justificadas todas pagas pelo empregador? </pergunta>
+                <pergunta> As faltas justificadas são todas pagas pelo empregador? </pergunta>
+                <pergunta> O empregador paga todas as faltas justificadas? </pergunta>
+                <pergunta> O empregador deve de pagar todas as faltas justificadas? </pergunta>
+            </perguntas>
+            <resposta>  Não. As faltas justificadas por motivo de doença, desde que o trabalhador beneficie de um regime de segurança social de protecção na doença; por motivo de acidente no trabalho, desde que o trabalhador tenha direito a seguro; as que forem justificadas por legislação que não seja o Código do Trabalho e que ultrapassem trinta dias a 30 por ano; as autorizadas ou aprovadas pelo empregador determinam perda de retribuição.
+                No caso de doença, acidente ou cumprimento de obrigações legais (serviço militar, serviço cívico) que, efectiva ou previsivelmente ultrapasse um mês, o contrato fica suspenso.
+                No caso das faltas para participação em campanha eleitoral só há direito à retribuição de um terço das faltas justificadas e o trabalhador só pode faltar meios dia ou dias completos desde que avise com 48 horas de antecedência.
+            </resposta>
+        </faq>
+        <faq>
+            <fonte>IGT</fonte>
+            <perguntas>
+                <pergunta> Quais são as consequências das faltas injustificadas?</pergunta>
+                <pergunta> Quais são as consequências das faltas injustificadas?</pergunta>
+                <pergunta> Quais são as consequências das faltas injustificadas?</pergunta>
+                <pergunta> Quais são as consequências das faltas injustificadas?</pergunta>
+            </perguntas>
+            <resposta> As faltas injustificadas constituem violação do dever de assiduidade e determinam perda da retribuição correspondente ao período de ausência, o qual será descontado na antiguidade do trabalhador, podendo levar a processo disciplinar com vista ao despedimento. Considera-se que o trabalhador praticou uma infracção grave se faltou injustificadamente a um ou meio período normal de trabalho imediatamente anterior ou posterior a um feriado ou aos dias ou meios-dias de descanso.
+                No caso de a apresentação do trabalhador, para início ou reinício da prestação de trabalho, se verificar com atraso injustificado superior a trinta ou sessenta minutos, pode o empregador recusar a aceitação da prestação durante parte ou todo o período normal de trabalho, respectivamente.
+            </resposta>
+        </faq>
+        <faq>
+            <fonte>IGT</fonte>
+            <perguntas>
+                <pergunta> Se o empregador violar alguns dos direitos relacionados com a justificação das faltas ou o seu desconto nas férias, o que acontece?</pergunta>
+                <pergunta> Se o empregador violar alguns dos direitos relacionados com a justificação das faltas ou o seu desconto nas férias, o que acontece?</pergunta>
+                <pergunta> Se o empregador violar alguns dos direitos relacionados com a justificação das faltas ou o seu desconto nas férias, o que acontece?</pergunta>
+                <pergunta> Se o empregador violar alguns dos direitos relacionados com a justificação das faltas ou o seu desconto nas férias, o que acontece?</pergunta>
+            </perguntas>
+            <resposta>  Havendo violação desses direitos dos trabalhadores, o empregador incorre em contra-ordenação grave, sendo-lhe aplicáveis coimas variáveis de acordo com a dimensão da empresa.
+            </resposta>
+        </faq>
+        
+    </faq_list>
+</documento>
+
