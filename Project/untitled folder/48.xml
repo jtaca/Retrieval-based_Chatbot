@@ -40,7 +40,7 @@
                 São faltas injustificadas as restantes.
             </resposta>
         </faq>
-        
+
         <faq>
             <fonte>IGT</fonte>
             <perguntas>
@@ -69,9 +69,9 @@
             <fonte>IGT</fonte>
             <perguntas>
                 <pergunta> Como pode o empregador exigir a justificação da falta?</pergunta>
-                <pergunta> Como deve o empregador exigir a justificação da falta?        </pergunta>
-                <pergunta> Como é que o empregador exige a justificação da falta?        </pergunta>
-                <pergunta> Como faz o empregador a exigência da justificação da falta?        </pergunta>
+                <pergunta> Como deve o empregador exigir a justificação da falta?</pergunta>
+                <pergunta> Como é que o empregador exige a justificação da falta?</pergunta>
+                <pergunta> Como faz o empregador a exigência da justificação da falta?</pergunta>
             </perguntas>
             <resposta> O empregador pode, nos 15 dias seguintes à comunicação das faltas, exigir ao trabalhador a prova. A prova da situação de doença é feita por estabelecimento hospitalar, por declaração do centro de saúde ou por atestado médico e que pode ser fiscalizada por médico, mediante requerimento do empregador dirigido à segurança social.
                 No caso de a segurança social não indicar o médico no prazo de vinte e quatro horas, o empregador designa o médico para efectuar a fiscalização, não podendo este ter qualquer vínculo contratual anterior ao empregador. Em caso de desacordo entre os pareceres médicos pode ser requerida a intervenção de junta médica. A apresentação ao empregador de declaração médica com intuito fraudulento constitui falsa declaração para efeitos de justa causa de despedimento.            </resposta>
@@ -112,7 +112,127 @@
             <resposta>  Havendo violação desses direitos dos trabalhadores, o empregador incorre em contra-ordenação grave, sendo-lhe aplicáveis coimas variáveis de acordo com a dimensão da empresa.
             </resposta>
         </faq>
-        
+        <faq>
+            <fonte>IEFP</fonte>
+            <perguntas>
+                <pergunta>O que se entende por Entidade de Apoio à Alternância (EAA)?</pergunta>
+                <pergunta>Qual é o significado de Entidade de Apoio à Alternância (EAA)?</pergunta>
+                <pergunta>Como se descreve Entidade de Apoio à Alternância (EAA)?</pergunta>
+                <pergunta>O que quer dizer Entidade de Apoio à Alternância (EAA)?</pergunta>
+            </perguntas>
+            <resposta>As Entidades de Apoio à Alternância são todas as pessoas, singulares ou colectivas, legalmente
+                constituídas e credenciadas pelo IEFP, que assegurem a formação prática em contexto de trabalho
+                em articulação com a Entidade Coordenadora, no âmbito do Sistema de Aprendizagem.
+            </resposta>
+        </faq>
+        <faq>
+            <fonte>IEFP</fonte>
+            <perguntas>
+                <pergunta>Que requisitos a minha entidade tem de reunir para poder colaborar com o IEFP como Entidade de Apoio à Alternância?</pergunta>
+                <pergunta>De forma a poder colaborar com o IEFP como Entidade de Apoio à Alternância, que requisitos é que são precisos juntar pela minha entidade?</pergunta>
+                <pergunta>Quais é que são os requisitos necessários a juntar para que a minha entidade esteja apta a colaborar como Entidade de Apoio à Alternância?</pergunta>
+                <pergunta>Que agrupamento de requisitos é que são necessários de modo a que a minha entidade possa colaborar com o IEFP como Entidade de Apoio à Alternância?</pergunta>
+            </perguntas>
+            <resposta>As Entidades de Apoio à Alternância (EAA's) devem reunir, cumulativamente, as seguintes condições:
+                encontrar-se regularmente constituídas e devidamente registadas;
+                ter capacidade técnica e organizativa para desenvolver e apoiar a formação em alternância,
+                nomeadamente a componente de formação prática em contexto de trabalho;
+                não ser devedora à Fazenda Pública, à Segurança Social e ao Instituto de Emprego e
+                Formação Profissional (IEFP) de quaisquer impostos, contribuições ou reembolsos, ou
+                estarem a cumprir um plano de regularização das obrigações daí decorrentes;
+                não terem sido condenadas por violação da legislação sobre o trabalho de menores e
+                discriminação no trabalho e no emprego, nomeadamente em função do género;
+                dispor de ambiente de trabalho, condições de higiene e segurança e meios técnicos,
+                humanos e materiais capazes de assegurar a formação profissional necessária e adequada à
+                qualificação para uma profissão;
+                integrar, nos seus quadros, trabalhadores qualificados que exerçam a profissão que constitui
+                o objecto da formação prática em contexto de trabalho; no total, o número de trabalhadores
+                deverá ser igual ou superior ao dos formandos em Aprendizagem;
+                ser credenciada no processo de caracterização técnica realizado pelos serviços do IEFP.
+            </resposta>
+        </faq>
+        <faq>
+            <fonte>IEFP</fonte>
+            <perguntas>
+                <pergunta>Que atribuições e responsabilidades terei como Entidade de Apoio à Alternância?</pergunta>
+                <pergunta>Sendo Entidade de Apoio à Alternância, que atribuições e responsabilidades me serão atribuídas?</pergunta>
+                <pergunta>Quais são as atribuições e responsabilidades que vou ter como Entidade de Apoio à Alternância?</pergunta>
+                <pergunta>Quando for Entidade de Apoio à Alternância, que atribuições e responsabilidades é que me vão dizer respeito?</pergunta>
+            </perguntas>
+            <resposta>As Entidades de Apoio à Alternância têm as seguintes atribuições e responsabilidades:
+                no desenvolvimento da componente de formação em contexto de trabalho, que está sujeita
+                a um acordo a celebrar entre a Entidade Coordenadora, a Entidade de Apoio à Alternância e
+                o formando, sob a forma de Contrato de Aprendizagem, onde se define o quadro de direitos
+                e deveres de cada uma das partes e as condições de desenvolvimento da formação;
+                no acompanhamento técnico-pedagógico, bem como na avaliação do formando, no período
+                de formação em contexto de trabalho será assegurado pelo Tutor indigitado pela Entidade de
+                Apoio à Alternância, em articulação com o Coordenador da acção;
+                O Tutor deverá ser designado de entre os profissionais do domínio de actividade que sejam
+                titulares de competências profissionais reconhecidas, compatíveis com as do perfil da
+                formação em causa.
+                Ao Tutor compete, de entre outros aspectos:
+                zelar para que se mantenham as condições logísticas necessárias, de modo a proporcionar o melhor aproveitamento da formação;
+                facilitar a integração e a adaptação dos formandos, no seio da Entidade de Apoio à
+                Alternância, nomeadamente no que se refere às relações interpessoais e ao desenvolvimento
+                das competências profissionais;
+                promover as condições para o seu aperfeiçoamento permanente, tanto ao nível técnico como
+                pedagógico;
+                participar na elaboração de relatórios de avaliação dos formandos e do processo de
+                formação;
+                manter a Entidade Coordenadora informada sobre todas as questões que prejudiquem o
+                desenvolvimento da formação em contexto de trabalho.
+                O Tutor deve também possuir competência pedagógica para a função, podendo obtê-la através da
+                frequência de um curso de Formação Pedagógica Inicial de Formadores, a realizar,
+                preferencialmente, no prazo de um ano a partir da assinatura do Contrato de Aprendizagem.
+            </resposta>
+        </faq>
+        <faq>
+            <fonte>IGT</fonte>
+            <perguntas>
+                <pergunta>Que documentação deve ser apresentada por parte da Entidade de Apoio à Alternância?</pergunta>
+                <pergunta>A Entidade de Apoio à Alternância tem que mostrar que documentação?</pergunta>
+                <pergunta>Qual é que é a documentação que deve ser mostrada pela Entidade de Apoio à Alternância?</pergunta>
+                <pergunta>Tem de ser apresentada pela Entidade de Apoio à Alternância que documentação?</pergunta>
+            </perguntas>
+            <resposta>Após comunicação da Entidade Coordenadora, a Entidade de Apoio à Alternância deve apresentar
+                um Pedido de Pagamento para cada acção de formação referente à comparticipação estipulada para
+                cada formando ou grupo de formandos, por natureza da despesa e indicando expressamente a
+                identificação do(s) tutor(es). Estes Pedidos de Pagamento integram os correspondentes processos
+                de candidatura das Entidades Coordenadoras, pelo que a sua aprovação depende da decisão que
+                recair sobre aqueles processos.
+            </resposta>
+        </faq>
+        <faq>
+            <fonte>IEFP</fonte>
+            <perguntas>
+                <pergunta>O que é a homologação de um curso de formação profissional?</pergunta>
+                <pergunta>Como se define a homologação de um curso de formação profissional</pergunta>
+                <pergunta>A homologação de um curso de formação profissional caracteriza-se como?</pergunta>
+                <pergunta>Relativamente a um curso de formação profissional, o que é a homologação?</pergunta>
+            </perguntas>
+            <resposta>É o reconhecimento, por parte da Entidade Certificadora nomeada para uma determinada profissão,
+                de que um curso de formação tem as condições de qualidade necessárias para dotar os formandos
+                que o concluam com sucesso das competências essenciais ao exercício desta profissão no mercado
+                de trabalho.
+                Os formandos que concluam com aproveitamento um curso homologado podem aceder ao
+                Certificado de Aptidão Profissional, desde que cumpridos os requisitos de escolaridade exigidos pela
+                legislação em vigor.
+            </resposta>
+        </faq>
+        <faq>
+            <fonte>IEFP</fonte>
+            <perguntas>
+                <pergunta>Como se procede à homologação de um curso?</pergunta>
+                <pergunta>Como se faz a homologação de um curso?</pergunta>
+                <pergunta>Em relação à homologação de um curso, como é que esta é feita?</pergunta>
+                <pergunta>A homologação de um curso origina-se como?</pergunta>
+            </perguntas>
+            <resposta>As entidades formadoras que pretendam homologar os seus cursos devem apresentar a
+                candidatura junto da respectiva entidade certificadora. Consulte a lista de entidades certificadoras
+                para as diferentes áreas profissionais e profissões e as condições de homologação.
+            </resposta>
+        </faq>
+
+
     </faq_list>
 </documento>
-
