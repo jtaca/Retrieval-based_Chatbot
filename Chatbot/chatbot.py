@@ -67,21 +67,6 @@ def preprocess_sentence(sentence):
 
     return sentence
 
-def count_char():
-    charc = {}
-    for k, v in unprocessed_questions.items():
-        for f in v:
-            f = f.replace(' ', '')
-            f = f.lower()
-            for c in f:
-                if c in charc:
-                    charc[c] = charc[c] + 1
-                else:
-                    charc[c] = 1
-
-    with open('carateres.txt', 'w', encoding='utf-8') as carateres:
-        for k, v in charc.items():
-            carateres.write(str(k) + " " + str(v) + "\n")
 
 def evaluate():
     pass
@@ -89,9 +74,8 @@ def evaluate():
 
 def main():
     setup()
-    count_char()
-    #preprocess()
-    #evaluate()
+    preprocess()
+    evaluate()
 
 
 if __name__ == '__main__':
