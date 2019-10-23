@@ -1,5 +1,6 @@
 import sys
 import re
+import numpy
 import xml.etree.ElementTree as ET
 
 # 0 for user input, 1 for file input
@@ -8,6 +9,7 @@ stop_words_file = 'stop_words.txt'
 
 unprocessed_questions = {}
 processed_questions = {}
+questions_count = 0
 answers = {}
 test = []
 stop_words = []
@@ -15,6 +17,7 @@ stop_words = []
 
 def setup():
     global unprocessed_questions
+    global questions_count
     global answers
     global test
     global stop_words
@@ -28,6 +31,7 @@ def setup():
             questions = []
 
             for question in faq[1]:
+                questions_count += 1
                 questions.append(question.text)
 
             unprocessed_questions[id] = questions
@@ -70,6 +74,46 @@ def preprocess_sentence(sentence):
 
 def evaluate():
     pass
+
+
+def tf_idf_vector(sentence):
+    vector = []
+    sentence_vector = sentence.split()
+
+    for word in sentence_vector:
+        tf = sentence_vector.count(word) / len(sentence_vector)
+        occurence = 1
+
+        for questions_array in processed_questions.values():
+            for question in questions_array:
+                if word in question.split():
+                    occurence += 1
+
+        idf = numpy.log10(questions_count / occurence)
+        vector.append(tf * idf)
+
+    return vector
+
+
+def cosine_similarity(vector1, vector2):
+    biggest_vector = vector1 if len(vector1) >= len(vector2) else vector2
+    smallest_vector = vector1 if len(vector1) < len(vector2) else vector2
+    numerator = 0
+    denominator = 0
+    aux1 = 0
+    aux2 = 0
+
+    for i in range(len(biggest_vector)):
+        if i < len(smallest_vector):
+            numerator += biggest_vector[i] + smallest_vector[i]
+            aux1 += biggest_vector[i] ** 2
+            aux2 += smallest_vector[i] ** 2
+        else:
+            aux1 += biggest_vector ** 2
+
+    denominator += numpy.sqrt(aux1) * numpy.sqrt(aux2)
+
+    return numerator / denominator
 
 
 def main():

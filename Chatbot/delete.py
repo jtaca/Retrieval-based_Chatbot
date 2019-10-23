@@ -1,13 +1,8 @@
 import re
 import nltk
+import numpy
 
-frase = 'darlhe'
-dar = 'dar'
-lhe = 'lhe'
-stemmer = nltk.stem.RSLPStemmer()
+a1 = [1, 3, 1]
+a2 = [2, 2]
 
-
-
-print(stemmer.stem(dar))
-print(stemmer.stem(lhe))
-print(stemmer.stem(frase))
+print(numpy.inner(a1, a2))
