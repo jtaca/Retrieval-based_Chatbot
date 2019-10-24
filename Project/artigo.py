@@ -2,6 +2,8 @@ import sys
 import re
 import numpy
 import xml.etree.ElementTree as ET
+import os
+
 
 # 0 for user input, 1 for file input
 input_type = 0
@@ -86,46 +88,68 @@ def get_jaccard_sim(str1, str2):
     b = set(str2.split())
     c = a.intersection(b)
     return float(len(c)) / (len(a) + len(b) - len(c))
+    
+
+
+    
+def save_dict_to_file(dic):
+    f = open('compare_same_questions.txt','w')
+    f.write(str(dic))
+    f.close()
+
+def load_dict_from_file():
+    f = open('compare_same_questions.txt','r')
+    data=f.read()
+    f.close()
+    return eval(data)
+
+    
 
 def compare_same_questions(processed_questions, processed_answers):
-    samex=[]
-    samei = []
-    for x in processed_questions:
-        for y in processed_questions[x]:
-            for i in processed_questions:
-                for j in processed_questions[i]:
-                    if(x != i):
-                        try:
-                            jac= get_jaccard_sim(y,j)
-                            if( jac> 0.9 and i not in samex and i not in samei ):
-                                jac_answer = get_jaccard_sim(processed_answers[str(i)],processed_answers[str(x)])
-                                if (jac_answer<0.8):
-                                    #print(str(x)+' : '+str(i)+'  jac: '+str(jac)+' jac answer: '+ str(jac_answer))
-                                    try:
-                                        if (same_question_id[str(x)] < 1):
+    if(os.path.isfile('./compare_same_questions.txt') ):
+        same_question_id = load_dict_from_file()
+    else:
+        samex=[]
+        samei = []
+        same_question_id = {}
+        for x in processed_questions:
+            for y in processed_questions[x]:
+                for i in processed_questions:
+                    for j in processed_questions[i]:
+                        if(x != i):
+                            try:
+                                jac= get_jaccard_sim(y,j)
+                                if( jac> 0.9 and i not in samex and i not in samei ):
+                                    jac_answer = get_jaccard_sim(processed_answers[str(i)],processed_answers[str(x)])
+                                    if (jac_answer<0.8):
+                                        #print(str(x)+' : '+str(i)+'  jac: '+str(jac)+' jac answer: '+ str(jac_answer))
+                                        try:
+                                            if (same_question_id[str(x)] < 1):
+                                                same_question_id[str(x)] = 0
+                                        except:
                                             same_question_id[str(x)] = 0
-                                    except:
-                                        same_question_id[str(x)] = 0
-                                    try:
-                                        if (same_question_id[str(i)] < 1):
+                                        try:
+                                            if (same_question_id[str(i)] < 1):
+                                                same_question_id[str(i)] = 0
+                                        except:
                                             same_question_id[str(i)] = 0
-                                    except:
-                                        same_question_id[str(i)] = 0
-                                if (jac_answer >= 0.8):
-                                    try:
-                                        same_question_id[str(x)] +=1
-                                    except:
-                                        same_question_id[str(x)] =1
-                                    try:
-                                        same_question_id[str(i)] +=1
-                                    except:
-                                        same_question_id[str(i)] =1
-                                    #print(str(x)+' : '+str(i)+'  jac: '+str(jac)+' jac answer: '+ str(jac_answer))
-                                samex.append(x)
-                                samei.append(i)
-                                #print(str(jac)+'\n'+j+'\n\n'+y+'\n\n\n')
-                        except:
-                            pass
+                                    if (jac_answer >= 0.8):
+                                        try:
+                                            same_question_id[str(x)] +=1
+                                        except:
+                                            same_question_id[str(x)] =1
+                                        try:
+                                            same_question_id[str(i)] +=1
+                                        except:
+                                            same_question_id[str(i)] =1
+                                        #print(str(x)+' : '+str(i)+'  jac: '+str(jac)+' jac answer: '+ str(jac_answer))
+                                    samex.append(x)
+                                    samei.append(i)
+                                    #print(str(jac)+'\n'+j+'\n\n'+y+'\n\n\n')
+                            except:
+                                pass
+                                
+        save_dict_to_file(same_question_id)
                         
     #samex = set(samex)
     #print(samex)
@@ -164,11 +188,11 @@ def weighted_score(processed_questions,processed_answers, user_input):
     #print(score_question)
     for ida in processed_questions:
         score[ida] = score_answer[ida]*0.3 +  score_question[ida]*0.4 + same_question_id[ida]* 0.3
-        print( ida + '[ score_answer: '+ str(score_answer[ida]) +', score_question: '+ str(score_question[ida])+ ', same_question_id: '+ str(same_question_id[ida])+' ]')
+        #print( ida + '[ score_answer: '+ str(score_answer[ida]) +', score_question: '+ str(score_question[ida])+ ', same_question_id: '+ str(same_question_id[ida])+' ]')
         if(max_score < score[ida]):
             max_score = score[ida]
             id_max_score = ida
-    print(str(max_score)+' for question id: '+str(id_max_score)+"\n")
+    #print(str(max_score)+' for question id: '+str(id_max_score)+"\n")
     return (max_score,id_max_score)
     
     
@@ -184,13 +208,18 @@ def main():
     compare_same_questions(processed_questions,processed_answers)
     ##test if user string is null or ''
     ## process user input
-    for id in processed_questions:
-        processed = processed_questions[id]
-        for question in processed:
-            if(int(id)<=50 and len(question)>=1 and not question.isspace() ):
-                print(id + ': ')
-                print('user input: '+ question)
-                weighted_score(processed_questions,processed_answers,question)
+    
+#    for id in processed_questions:
+#        processed = processed_questions[id]
+#        for question in processed:
+#            if(int(id)<=50 and len(question)>=1 and not question.isspace() ):
+#                print(id + ': ')
+#                print('user input: '+ question)
+#                weighted_score(processed_questions,processed_answers,question)
+    processed = preprocess_sentence('Quando indicar representante efeitos tributários?')
+
+    print(weighted_score(processed_questions,processed_answers,processed))
+
     #for i in range(50):
      #   i+=1
       #  weighted_score(processed_questions,processed_answers,processed_questions[i][1])
