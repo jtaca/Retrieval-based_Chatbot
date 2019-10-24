@@ -9,8 +9,8 @@ import os
 input_type = 0
 stop_words_file = 'stop_words.txt'
 
-unprocessed_questions = {}
-processed_questions = {}
+#unprocessed_questions = {}
+#processed_questions = {}
 #isto é para saber das respostas repetidas
 processed_answers = {}
 same_question_id={}
@@ -22,9 +22,12 @@ answers = {}
 test = []
 stop_words = []
 
+id_questions = {}
+test_cases = {}
+
 
 def setup():
-    global unprocessed_questions
+    global id_questions
     global questions_count
     global answers
     global test
@@ -34,16 +37,19 @@ def setup():
 
     for document in root.findall('documento'):
         for faq in document[1]:
-            id = faq[2].get('id')
+            answer_id = faq[2].get('id')
             answer = faq[2].text
             questions = []
 
             for question in faq[1]:
-                questions_count += 1
-                questions.append(question.text)
+                q = question.text.strip()
+                if len(q) > 0:
+                    questions_count += 1
+                    questions.append(q)
 
-            unprocessed_questions[id] = questions
-            answers[id] = answer
+            if len(questions) > 0:
+                id_questions[answer_id] = questions
+                answers[answer_id] = answer
 
     with open(stop_words_file, 'r', encoding='utf-8') as swf:
         for line in swf:
@@ -56,17 +62,18 @@ def setup():
 
 
 def preprocess():
-    
-    for id in unprocessed_questions:
-        unprocessed = unprocessed_questions[id]
-        processed = []
-        processed_answers[id] = preprocess_sentence(answers[id])
-        
 
-        for question in unprocessed:
-            processed.append(preprocess_sentence(question))
+    for answer_id, questions in id_questions.items():
+           unprocessed = id_questions[answer_id]
+           processed = []
+           processed_answers[answer_id] = preprocess_sentence(answers[answer_id])
 
-        processed_questions[id] = processed
+           for question in unprocessed:
+               processed.append(preprocess_sentence(question))
+
+           id_questions[answer_id] = processed
+
+
     
     
     
@@ -219,6 +226,69 @@ def Read_Two_Column_File(file_name):
 
         return x, y
 
+def setup_test():
+    global test_cases
+    global id_questions
+
+    for answer_id, questions in id_questions.items():
+        test_cases[answer_id] = questions[-1]
+        if len(questions) > 1:
+            del questions[-1]
+ 
+ 
+def Test_accuracy():
+
+    right = 0
+    total = 0
+    accuracy = 0
+    
+    for answer_id, questions in id_questions.items():
+        for question in questions:
+            Max_score = weighted_score(id_questions,processed_answers,question)
+            same_thing = 0
+            total+=1
+                 
+            try:
+                test_for_same_answers = load_dict_from_file('test_for_same_answers.txt')
+                print(test_for_same_answers)
+                same_thing = test_for_same_answers[str(answer_id)]
+                
+            except:
+                pass
+           
+            print('Result: '+str(Max_score[1]) +' Theoric: ' +str(answer_id)+ ' , '+ str(same_thing))
+            if( Max_score[1] == answer_id or Max_score[1] == same_thing):
+                right +=1
+            else:
+                print('failed')
+            accuracy=right/total
+                    
+    print('Accuracy: '+ str(accuracy))
+            
+    
+
+def Test_accuracy_txt():
+    x, y = Read_Two_Column_File('test.txt')
+    test_for_same_answers = load_dict_from_file('test_for_same_answers.txt')
+    right = 0
+    for i in range(len(y)):
+        processed = preprocess_sentence(y[i])
+        Max_score = weighted_score(processed_questions,processed_answers,processed)
+        
+        same_thing = 0
+         
+        try:
+            same_thing = test_for_same_answers[str(x[i])]
+        except:
+            pass
+       
+        print('Result: '+str(Max_score[1]) +' Theoric: ' +str(x[i])+ ' , '+ str(same_thing))
+        if( Max_score[1] == x[i] or Max_score[1] == same_thing):
+            right +=1
+        else:
+            print('failed')
+            
+    print('Accuracy: '+ str(right/len(y)))
     
     
 
@@ -229,7 +299,14 @@ def main():
     setup()
     preprocess()
     
-    compare_same_questions(processed_questions,processed_answers)
+    setup_test() # retirar se não for para testar
+    
+   
+    compare_same_questions(id_questions,processed_answers) # change to processed_questions if not in test
+    
+    Test_accuracy()
+    
+    
     ##test if user string is null or ''
     ## process user input
     
@@ -241,24 +318,7 @@ def main():
 #                print('user input: '+ question)
 #                weighted_score(processed_questions,processed_answers,question)
     #processed = preprocess_sentence('Quais normas caso troca electronicas empresa sedeada pais europeia em portugal')
-    x, y = Read_Two_Column_File('test.txt')
-    test_for_same_answers = load_dict_from_file('test_for_same_answers.txt')
-    right = 0
-    for i in range(len(y)):
-        processed = preprocess_sentence(y[i])
-        Max_score = weighted_score(processed_questions,processed_answers,processed)
-        print(Max_score[1])
-        print(x[i])
-        if( Max_score[1] == x[i]):
-            right +=1
-        else:
-            try:
-                if( Max_score[1] in test_for_same_answers[str(x[i])]):
-                    right +=1
-            except:
-                print('no same')
-                pass
-    print('Accuracy: '+ str(right/len(y)))
+
             
     #processed = preprocess_sentence('Quais normas caso troca electronicas empresa sedeada pais europeia em portugal')
     
