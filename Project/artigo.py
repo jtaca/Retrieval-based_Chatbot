@@ -145,7 +145,7 @@ def weighted_score(processed_questions,processed_answers, user_input):
         processed = processed_questions[id]
         
         score_answer[id] = get_jaccard_sim(user_input,processed_answers[id])
-        
+        max_question = 0
         for question in processed:
             jac_question = get_jaccard_sim(user_input,question)
             if (max_question < jac_question):
@@ -164,6 +164,7 @@ def weighted_score(processed_questions,processed_answers, user_input):
     #print(score_question)
     for ida in processed_questions:
         score[ida] = score_answer[ida]*0.3 +  score_question[ida]*0.4 + same_question_id[ida]* 0.3
+        print( ida + '[ score_answer: '+ str(score_answer[ida]) +', score_question: '+ str(score_question[ida])+ ', same_question_id: '+ str(same_question_id[ida])+' ]')
         if(max_score < score[ida]):
             max_score = score[ida]
             id_max_score = ida
