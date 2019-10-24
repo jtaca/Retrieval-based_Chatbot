@@ -89,6 +89,9 @@ def get_jaccard_sim(str1, str2):
     c = a.intersection(b)
     return float(len(c)) / (len(a) + len(b) - len(c))
     
+
+
+    
 def save_dict_to_file(dic):
     f = open('compare_same_questions.txt','w')
     f.write(str(dic))
