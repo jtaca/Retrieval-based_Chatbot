@@ -185,11 +185,11 @@ def weighted_score(processed_questions,processed_answers, user_input):
     #print(score_question)
     for ida in processed_questions:
         score[ida] = score_answer[ida]*0.3 +  score_question[ida]*0.4 + same_question_id[ida]* 0.3
-        print( ida + '[ score_answer: '+ str(score_answer[ida]) +', score_question: '+ str(score_question[ida])+ ', same_question_id: '+ str(same_question_id[ida])+' ]')
+        #print( ida + '[ score_answer: '+ str(score_answer[ida]) +', score_question: '+ str(score_question[ida])+ ', same_question_id: '+ str(same_question_id[ida])+' ]')
         if(max_score < score[ida]):
             max_score = score[ida]
             id_max_score = ida
-    print(str(max_score)+' for question id: '+str(id_max_score)+"\n")
+    #print(str(max_score)+' for question id: '+str(id_max_score)+"\n")
     return (max_score,id_max_score)
     
     
@@ -215,7 +215,7 @@ def main():
 #                weighted_score(processed_questions,processed_answers,question)
     processed = preprocess_sentence('Quando indicar representante efeitos tributários?')
 
-    weighted_score(processed_questions,processed_answers,processed)
+    print(weighted_score(processed_questions,processed_answers,processed))
 
     #for i in range(50):
      #   i+=1
