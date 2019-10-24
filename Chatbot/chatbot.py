@@ -2,23 +2,23 @@ import sys
 import re
 import numpy
 import xml.etree.ElementTree as ET
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.metrics.pairwise import cosine_similarity
+import time
 
 # 0 for user input, 1 for file input
 input_type = 0
 stop_words_file = 'stop_words.txt'
 
-unprocessed_questions = {}
-processed_questions = {}
+id_questions = {}
 questions_count = 0
-answers = {}
 test = []
 stop_words = []
 
 
 def setup():
-    global unprocessed_questions
+    global id_questions
     global questions_count
-    global answers
     global test
     global stop_words
 
@@ -26,16 +26,17 @@ def setup():
 
     for document in root.findall('documento'):
         for faq in document[1]:
-            id = faq[2].get('id')
+            answer_id = faq[2].get('id')
             answer = faq[2].text
             questions = []
 
             for question in faq[1]:
-                questions_count += 1
-                questions.append(question.text)
+                q = question.text.strip()
+                if len(q) > 0:
+                    questions_count += 1
+                    questions.append(q)
 
-            unprocessed_questions[id] = questions
-            answers[id] = answer
+            id_questions[answer_id] = questions
 
     with open(stop_words_file, 'r', encoding='utf-8') as swf:
         for line in swf:
@@ -48,14 +49,14 @@ def setup():
 
 
 def preprocess():
-    for id in unprocessed_questions:
-        unprocessed = unprocessed_questions[id]
+    for answer_id, questions in id_questions.items():
+        unprocessed = id_questions[answer_id]
         processed = []
 
         for question in unprocessed:
             processed.append(preprocess_sentence(question))
 
-        processed_questions[id] = processed
+        id_questions[answer_id] = processed
 
 
 def preprocess_sentence(sentence):
@@ -73,47 +74,35 @@ def preprocess_sentence(sentence):
 
 
 def evaluate():
-    pass
+    column_id = {}
+    column = 0
+    corpus = []
 
+    for answer_id, questions in id_questions.items():
+        for question in questions:
+            corpus.append(question)
+            column_id[column] = answer_id
+            column += 1
 
-def tf_idf_vector(sentence):
-    vector = []
-    sentence_vector = sentence.split()
+    corpus.append(preprocess_sentence(input('Enter your input:\n')))
 
-    for word in sentence_vector:
-        tf = sentence_vector.count(word) / len(sentence_vector)
-        occurence = 1
+    vectorizer = TfidfVectorizer()
+    tfidf_matrix = vectorizer.fit_transform(corpus)
+    user_input = tfidf_matrix[-1, :].toarray()[0]
+    best_similarity = -1
+    best_id = 0
 
-        for questions_array in processed_questions.values():
-            for question in questions_array:
-                if word in question.split():
-                    occurence += 1
+    for i in range(tfidf_matrix.shape[0] - 1):
+        comparing = tfidf_matrix[i, :].toarray()[0]
+        similarity = 0
+        for j in range(len(user_input)):
+            similarity += user_input[j] * comparing[j]
+            if similarity > best_similarity:
+                best_similarity = similarity
+                best_id = column_id[i]
 
-        idf = numpy.log10(questions_count / occurence)
-        vector.append(tf * idf)
-
-    return vector
-
-
-def cosine_similarity(vector1, vector2):
-    biggest_vector = vector1 if len(vector1) >= len(vector2) else vector2
-    smallest_vector = vector1 if len(vector1) < len(vector2) else vector2
-    numerator = 0
-    denominator = 0
-    aux1 = 0
-    aux2 = 0
-
-    for i in range(len(biggest_vector)):
-        if i < len(smallest_vector):
-            numerator += biggest_vector[i] + smallest_vector[i]
-            aux1 += biggest_vector[i] ** 2
-            aux2 += smallest_vector[i] ** 2
-        else:
-            aux1 += biggest_vector ** 2
-
-    denominator += numpy.sqrt(aux1) * numpy.sqrt(aux2)
-
-    return numerator / denominator
+    print(f'Melhor id = {best_id}')
+    print(f'Similaridade = {best_similarity}')
 
 
 def main():
