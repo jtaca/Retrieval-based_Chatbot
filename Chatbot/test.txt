@@ -1,5 +1,51 @@
-qual custo associado por transcricao
-sera que os cidadaos estrangeiros conseguem construir online
-que diferenca entre empresa e pessoa coletiva
-se cancelarem a inscricao devolvem o valor pago
-Quais normas caso troca electronicas empresa sedeada pais europeia em portugal
+75,	qual custo associado por transcricao
+33,	sera que os cidadaos estrangeiros conseguem construir online
+14,	que diferenca entre empresa e pessoa coletiva
+111,	se cancelarem a inscricao devolvem o valor pago
+4,	quanto cartão cartão pessoa coletiva
+19,	como escolho firma
+42,	que certificado pode ser processo criação empresa
+67,	qual custo permanente de registo inglesa quais modalidades pagamento
+72,	que pedidos de registo transcrição são possíveis
+95,	tendo submetido documentos preciso enviar originais conservatória comercial
+106,	Em moldes ser feito pagamento
+134,	necessário outros livros mercantil
+165,	possivel desistir pedido de admissibilidade
+187,	qual forma certa pedido multiplo desenho ou modelo
+207,	alguem marca semelhante ações tomar
+219,	qual definição patente
+249,	se cliente recebeu fatura existe forma garantir recepção?
+278,	fatura eletrónica tem valor probatório
+282,	formato deve ser fatura transmtida
+308,	edi tem problema resolvido?
+318,	podem acumuladas férias de vários anos trabalhador
+345,	qual significado adaptabilidade horario trabalho?
+372,	é obrigatória cartão de feirante e ambulante identificativo?
+380,	deixa necessário responder INE?
+387,	IES é paga?
+395,	o que é sociedade unipessoal quotas?
+402,	sobre que rendimentos pagar IRC?
+403,	quando decorre tributação do IRC?	
+407,	posso algum apoio técnico IEFP empresário?
+411,	caso me depare com barreira comercial externo o que fazer
+423,	qual definição faltas	
+428,	serão faltas justificadas pelo empregador?
+431,	o que dizer entidade alternância
+439,	isenção horário abrange dias descanso	
+446,	a constituição é necessária
+455,	como se desenrola julgados de paz
+469,	quando considerar trabalhador nocturno?
+474,	quais principais vantagens laboral?
+492,	o que hospedagem fins lucrativos
+505,	num estabelecimento de alojamento afixação identificativa é obrigatória?
+507,	quais tipos estabelecimentos alojamento em vigor?
+509,	devo encerrar se a câmara não efetuar no praso após mera cominicação
+515,	o que é entidade formadora?
+526,	a acreditação transmissivel
+532,	o que curso profissional
+533,	como processo lojas da empresa
+538,	quais gases gpl
+555,	a que refere empresa distribuidora?
+561,	o que aplicação aérea
+564,	quem constitui pessoal privada
+593,	posso suspender actividade empresa de trabalho quanto tempo	
