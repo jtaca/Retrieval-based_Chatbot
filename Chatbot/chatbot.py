@@ -5,6 +5,7 @@ import xml.etree.ElementTree as ET
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 from nltk.metrics.scores import accuracy
+import nltk
 import time
 
 # 0 for user input, 1 for file input
@@ -35,10 +36,12 @@ def setup():
             for question in faq[1]:
                 q = question.text.strip()
                 if len(q) > 0:
-                    questions_count += 1
-                    questions.append(q)
+                    processed = preprocess_sentence(q)
+                    if len(processed) > 0:
+                        questions_count += 1
+                        questions.append(processed)
 
-            if len(questions) > 0:
+            if len(questions) > 0 and questions not in id_questions.values():
                 id_questions[answer_id] = questions
 
     with open(stop_words_file, 'r', encoding='utf-8') as swf:
@@ -67,12 +70,18 @@ def preprocess():
         processed = []
 
         for question in unprocessed:
-            processed.append(preprocess_sentence(question))
+            processed_question = preprocess_sentence(question)
+            if len(processed_question) > 0:
+                processed.append(preprocess_sentence(question))
 
-        id_questions[answer_id] = processed
+        if len(processed) > 0:
+            id_questions[answer_id] = processed
 
 
 def preprocess_sentence(sentence):
+    for stop_word in stop_words:
+        sentence = re.sub(stop_word, '', sentence)
+
     sentence = re.sub(u'[ãâáàÃÂÁÀ]', 'a', sentence)
     sentence = re.sub(u'[êéèÊÉÈ]', 'e', sentence)
     sentence = re.sub(u'[îíìÎÍÌ]', 'i', sentence)
@@ -83,7 +92,30 @@ def preprocess_sentence(sentence):
     sentence = sentence.lower()
     sentence = re.sub(u'[\?\.!:,;\(\)-_\\\'\"ºª/]', '', sentence)
 
+    result = ''
+    stemmer = nltk.stem.RSLPStemmer()
+    for word in sentence.split():
+        result += stemmer.stem(word)
+
     return sentence
+
+# def preprocess_sentence(sentence):
+#     processed_sentence = ''
+#     sentence = re.sub(u'[\?\.!:,;\(\)-_\\\'\"ºª/]', ' ', sentence)
+#     sentence = sentence.lower()
+
+#     for word in sentence.split():
+#         if word not in stop_words:
+#             word = re.sub(u'[ãâáàÃÂÁÀ]', 'a', word)
+#             word = re.sub(u'[êéèÊÉÈ]', 'e', word)
+#             word = re.sub(u'[îíìÎÍÌ]', 'i', word)
+#             word = re.sub(u'[õôóòÕÔÓÒ]', 'o', word)
+#             word = re.sub(u'[ûúùÛÚÙ]', 'u', word)
+#             word = re.sub(u'[çÇ]', 'c', word)
+
+#         processed_sentence += word + ' '
+
+#     return processed_sentence.strip()
 
 
 def run_test():
@@ -100,9 +132,12 @@ def run_test():
     real = []
     result = []
     vectorizer = TfidfVectorizer()
+    start = time.time()
     print(len(test_cases))
-    print(len(corpus))
-    for answer_id, question in test_cases.items():
+    for i in range(1, 542):
+        # for answer_id, question in test_cases.items():
+        answer_id = str(i)
+        question = test_cases[answer_id]
         print(f'Running test on {answer_id}')
         real.append(answer_id)
         corpus.append(preprocess_sentence(question))
@@ -121,8 +156,10 @@ def run_test():
                     best_id = column_id[i]
 
         result.append(best_id)
+        del corpus[-1]
 
     print("Accuracy:", accuracy(real, result))
+    print(f'Duration: {time.time() - start}')
 
 
 def evaluate():
@@ -165,7 +202,7 @@ def evaluate():
 def main():
     setup()
     setup_test()
-    preprocess()
+    # preprocess()
     run_test()
 
 

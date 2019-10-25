@@ -1,0 +1,201 @@
+49	O Empresa Online permite criar que tipos de sociedade?
+	['cidadão estrangeiro pode constituir empresa através serviço criação empresa online', 'possivel cidadão estrangeiro constituir empresa através serviço criação empresa online', 'pode cidadao estrangeiro constituir empresa atraves servico criacao empresa online', 'servico criacao empresa online permite cidadao estrangeiro constitua empresa']
+106	Como deve ser feito o pagamento?
+	['quais modalidades pagamento disponiveis', 'moldes pode feito pagamento', 'maneiras pode pagar', 'pagamento pode efetuar quais meios']
+121	Quando é que poderei levantar o capital social da "Empresa na Hora"?
+	['possivel levantamento capital social empresa hora', 'poderei levantar capital social empresa hora', 'quanto tempo esperar levantar capital social empresa hora', 'existe algum tempo espera possibilidade levantamento capital social empresa hora']
+104	Depois de fazer a submissão de um pedido online tenho algum comprovativo?
+	['apos submissao pedido online acesso algum comprovativo', 'submissao pedido online sera comprovada', 'sera dado comprovativo apos submissao pedido online', 'sera comprovada submissao pedido online']
+397	Defina uma Sociedade por Quotas, por favor.
+	['sao sociedades quotas', 'define sociedades quotas', 'definicao sociedades quotas', 'dizem respeito sociedades quotas', 'definem sociedades quotas', 'sao sociedades quotas', 'sociedade quotas', 'sociedade quotas', 'define sociedades quotas', 'define sociedade quotas', 'define sociedade quotas', 'definicao sociedades quotas', 'definicao sociedade quotas', 'dizem respeito sociedades quotas', 'diz respeito sociedade quotas', 'diz respeito sociedade quotas', 'definem sociedades quotas', 'define sociedade quotas', 'define sociedade quotas', 'trata sociedade quotas', 'tratam sociedades quotas']
+478	O que é que se entende por alimento medicamentoso para animais?
+	['entende alimento medicamentoso animais', 'alimento medicamentoso animais', 'define alimento medicamentoso animais', 'consiste alimento medicamentoso animais']
+426	Quando devo comunicar uma falta justificada?
+	['deve feita comunicacao falta justificada', 'deve comunicar falta justificada', 'preciso justificar falta deve fazer comunicacao', 'ate deve feita comunicacao falta justificada']
+319	É possível uma empresa encerrar para férias?
+	['pode empresa encerrar ferias', 'empresa pode encerrada ferias', 'possivel empresa encerrar ferias', 'possivel empresa fechar ferias']
+121	Quanto tempo é que terei de esperar para levantar o capital social da "Empresa na Hora"?
+	['possivel levantamento capital social empresa hora', 'poderei levantar capital social empresa hora', 'quanto tempo esperar levantar capital social empresa hora', 'existe algum tempo espera possibilidade levantamento capital social empresa hora']
+184	O que devo fazer para proceder ao pagamento?
+	['fazer antes registar', 'deve feito antes registar', 'devo fazer antes registar', 'deve titular fazer antes registar', 'antes registo deve conta', 'aconselhado fazer previamente registo', 'quais cuidados previos relacao registo']
+397	Qual a definição de uma Sociedade por Quotas?
+	['sao sociedades quotas', 'define sociedades quotas', 'definicao sociedades quotas', 'dizem respeito sociedades quotas', 'definem sociedades quotas', 'sao sociedades quotas', 'sociedade quotas', 'sociedade quotas', 'define sociedades quotas', 'define sociedade quotas', 'define sociedade quotas', 'definicao sociedades quotas', 'definicao sociedade quotas', 'dizem respeito sociedades quotas', 'diz respeito sociedade quotas', 'diz respeito sociedade quotas', 'definem sociedades quotas', 'define sociedade quotas', 'define sociedade quotas', 'trata sociedade quotas', 'tratam sociedades quotas']
+319	É possível uma empresa fechar para férias?
+	['pode empresa encerrar ferias', 'empresa pode encerrada ferias', 'possivel empresa encerrar ferias', 'possivel empresa fechar ferias']
+319	É possível uma empresa fechar para férias?
+	['pode empresa encerrar ferias', 'empresa pode encerrada ferias', 'possivel empresa encerrar ferias', 'possivel empresa fechar ferias']
+478	O que é exactamente um alimento medicamentoso para animais?
+	['entende alimento medicamentoso animais', 'alimento medicamentoso animais', 'define alimento medicamentoso animais', 'consiste alimento medicamentoso animais']
+62	Como posso fazer para pagar?
+	['custo certidao permanente quais modalidades pagamento', 'quanto custa certidao posso pagala', 'quanto custa posso pagar certidao permanente', 'valor certidao permanente', 'preco certidao permanente', 'posso pagar certidao permanente', 'metodos pagamento certidao permanente']
+37	Quando é emitido o Cartão da Empresa?
+	['recebo cartao empresa', 'sera remetido cartao empresa', 'quanto cartao empresa recebo', 'acesso cartao empresa']
+53	Como comprovo que fiz um pedido online?
+	['pode pedir certidao permanente online', 'posso pedir certidao permanente online', 'elegivel pedido certidao permanente online', 'qualquer pessoa pode pedir certidao permanente online', 'condicoes pedir certidao permanente online']
+49	O serviço de criação Empresa Online pode ser usado para criar que tipos de sociedade?
+	['cidadão estrangeiro pode constituir empresa através serviço criação empresa online', 'possivel cidadão estrangeiro constituir empresa através serviço criação empresa online', 'pode cidadao estrangeiro constituir empresa atraves servico criacao empresa online', 'servico criacao empresa online permite cidadao estrangeiro constitua empresa']
+196	Se alguém registar uma marca parecida à minha, quais as minhas opções?
+	['quais vantagens registar marca', 'porque devo registar marca', 'quais beneficios registar marcas', 'ganha registar marca', 'vantagem registar marca']
+40	Podia dizer-me o que é um Certificado Digital?
+	['certificado digital', 'consiste certificado digital', 'informacoes existem acerca certificado digital', 'posso saber certificado digital']
+22	Qual o custo de constituir uma Empresa Online ou uma Empresa Online com Marca associada?
+	['custo constituicao empresa online empresa online marca associada', 'quanto custa constituicao empresa online empresa online marca associada', 'custo constituir empresa online empresa online marca associada', 'custo constituir empresa online empresa online marca associada']
+339	Quais é que são os procedimentos em caso de alteração do horário de trabalho?
+	['caso alteracao horario trabalho quais procedimentos empregador deve observar', 'envolvem alteracoes feitas empregador horario trabalho', 'horario trabalho alterado procedimentos deve empregador observar', 'alteracoes horario trabalho quais sao procedimentos empregador deve observar']
+63	O que é que é um registo comercial bilingue?
+	['consiste registo comercial bilingue', 'registo comercial bilingue', 'significa registo comercial bilingue', 'definicao registo comercial bilingue']
+63	O que se entende por registo comercial bilingue?
+	['consiste registo comercial bilingue', 'registo comercial bilingue', 'significa registo comercial bilingue', 'definicao registo comercial bilingue']
+397	Uma Sociedade por Quotas é o quê?
+	['sao sociedades quotas', 'define sociedades quotas', 'definicao sociedades quotas', 'dizem respeito sociedades quotas', 'definem sociedades quotas', 'sao sociedades quotas', 'sociedade quotas', 'sociedade quotas', 'define sociedades quotas', 'define sociedade quotas', 'define sociedade quotas', 'definicao sociedades quotas', 'definicao sociedade quotas', 'dizem respeito sociedades quotas', 'diz respeito sociedade quotas', 'diz respeito sociedade quotas', 'definem sociedades quotas', 'define sociedade quotas', 'define sociedade quotas', 'trata sociedade quotas', 'tratam sociedades quotas']
+339	Em caso de alteração do horário de trabalho, quais os procedimentos?
+	['caso alteracao horario trabalho quais procedimentos empregador deve observar', 'envolvem alteracoes feitas empregador horario trabalho', 'horario trabalho alterado procedimentos deve empregador observar', 'alteracoes horario trabalho quais sao procedimentos empregador deve observar']
+387	Como pagar?
+	['ies paga', 'ies custos', 'quanto custa ies', 'pagar ies']
+339	Em caso de alteração do horário de trabalho, quais os procedimentos que o empregador deve ter em conta?
+	['caso alteracao horario trabalho quais procedimentos empregador deve observar', 'envolvem alteracoes feitas empregador horario trabalho', 'horario trabalho alterado procedimentos deve empregador observar', 'alteracoes horario trabalho quais sao procedimentos empregador deve observar']
+113	Quais os tipos de sociedades que podem ser criadas no Empresa Online?
+	['tipos sociedades podem constituidas balcoes empresa hora', 'quais sao tipos sociedades podem contituidas balcoes empresa hora', 'tipos sociedades posso criar balcoes empresa hora', 'dirigir balcoes empresa hora tipo sociedades poderei formar']
+207	O que é que devo fazer caso alguém tenha registado uma marca parecida à minha?
+	['conhecimento efectuado pedido registo marca semelhante posso fazer', 'proceder caso alguem registado marca semelhante à', 'alguem registou marca semelhante acoes tomar', 'fazer caso alguem registado marca parecida', 'soube pedido registo marca semelhante marca pertence resolver situacao']
+0	Como te chamas?
+	[]
+22	Quanto temos de pagar para criar uma Empresa Online com Marca associada?
+	['custo constituicao empresa online empresa online marca associada', 'quanto custa constituicao empresa online empresa online marca associada', 'custo constituir empresa online empresa online marca associada', 'custo constituir empresa online empresa online marca associada']
+398	O que é que são Sociedades Anónimas?
+	['sao sociedades anonimas', 'define sociedades anonimas', 'definicao sociedades anonimas', 'dizem respeito sociedades anonimas', 'sociedade anonima', 'sociedade anonima', 'define sociedades anonimas', 'define sociedade anonima', 'definicao sociedades anonimas', 'definicao sociedade anonima', 'dizem respeito sociedades anonimas', 'diz respeito sociedade anonima', 'tratam sociedades anonimas', 'tratam sociedades anonimas', 'trata sociedade anonima', 'definem sociedades anonimas', 'define sociedade anonima', 'define sociedade anonima']
+341	O que fazer se o período da alteração não for superior a uma semana?
+	['alteracao nao durar semana', 'caso alteracao nao dure semana', 'alteracao durante periodo nao superior dias', 'periodo alteracao nao superar semana']
+63	Um registo comercial bilingue é exactamente o quê?
+	['consiste registo comercial bilingue', 'registo comercial bilingue', 'significa registo comercial bilingue', 'definicao registo comercial bilingue']
+581	Onde vives?
+	['ambito geografico utilizacao', 'onde cae utilizada', 'ambito geografico aplicacao', 'onde aplicada cae']
+43	Qual a definição de Certificado Digital?
+	['é certificado digital qualificado', 'quais caracteristicas certificado digital qualificado', 'definicao certificado digital qualificado', 'caracteriza certificado digital qualificado']
+104	Recebo algum comprovativo após a submissão de um pedido online?
+	['apos submissao pedido online acesso algum comprovativo', 'submissao pedido online sera comprovada', 'sera dado comprovativo apos submissao pedido online', 'sera comprovada submissao pedido online']
+435	Qual o significado de homologação de um curso de formação profissional?
+	['homologacao curso formacao profissional', 'significa homologacao curso formacao profissional', 'diz respeito homologacao curso formacao profissional', 'define homologacao curso formacao profissional']
+485	Tens algum animal de estimação?
+	['entende animal companhia', 'animal companhia', 'faz animal animal companhia', 'definicao animal companhia']
+63	Podia explicar-me o que é um registo comercial bilingue?
+	['consiste registo comercial bilingue', 'registo comercial bilingue', 'significa registo comercial bilingue', 'definicao registo comercial bilingue']
+47	Podemos criar que tipo de sociedade com o Empresa Online?
+	['cartão cidadão pode utilizado processo criação empresa online', 'processo criacao empresa online pode utilizado cartao cidadao', 'criar empresa online pode utilizado cartao cidadão', 'posso utilizar cartao cidadao criacao empresa online']
+43	Podia dizer-me o que é um certificado digital qualificado, por favor?
+	['é certificado digital qualificado', 'quais caracteristicas certificado digital qualificado', 'definicao certificado digital qualificado', 'caracteriza certificado digital qualificado']
+435	O que quer dizer homologação de um curso de formação profissional
+	['homologacao curso formacao profissional', 'significa homologacao curso formacao profissional', 'diz respeito homologacao curso formacao profissional', 'define homologacao curso formacao profissional']
+40	Gostaria de saber o que é um Certificado Digital.
+	['certificado digital', 'consiste certificado digital', 'informacoes existem acerca certificado digital', 'posso saber certificado digital']
+341	O que deve ser tido em conta se o período da alteração não for superior a uma semana?
+	['alteracao nao durar semana', 'caso alteracao nao dure semana', 'alteracao durante periodo nao superior dias', 'periodo alteracao nao superar semana']
+435	O que significa a homologação de um curso de formação profissional?
+	['homologacao curso formacao profissional', 'significa homologacao curso formacao profissional', 'diz respeito homologacao curso formacao profissional', 'define homologacao curso formacao profissional']
+40	O que é um Certificado Digital?
+	['certificado digital', 'consiste certificado digital', 'informacoes existem acerca certificado digital', 'posso saber certificado digital']
+426	Até quando posso comunicar uma falta justificada?
+	['deve feita comunicacao falta justificada', 'deve comunicar falta justificada', 'preciso justificar falta deve fazer comunicacao', 'ate deve feita comunicacao falta justificada']
+81	São possíveis que tipos de pedidos de Registo de Depósito?
+	['tipo pedidos registo deposito posso efectuar', 'quais pedidos registo deposito posso efetuar', 'pedidos registo deposito sao possiveis efetuar', 'quais tipos pedidos registo deposito sao possiveis']
+0	Quantos anos tens?
+	[]
+81	Tipos de registo de depósitos possíveis?
+	['tipo pedidos registo deposito posso efectuar', 'quais pedidos registo deposito posso efetuar', 'pedidos registo deposito sao possiveis efetuar', 'quais tipos pedidos registo deposito sao possiveis']
+81	Posso fazer que tipos de pedidos de Registo de Depósito?
+	['tipo pedidos registo deposito posso efectuar', 'quais pedidos registo deposito posso efetuar', 'pedidos registo deposito sao possiveis efetuar', 'quais tipos pedidos registo deposito sao possiveis']
+22	Quanto custa criar uma Empresa Online?
+	['custo constituicao empresa online empresa online marca associada', 'quanto custa constituicao empresa online empresa online marca associada', 'custo constituir empresa online empresa online marca associada', 'custo constituir empresa online empresa online marca associada']
+398	Qual a definição de Sociedades Anónimas?
+	['sao sociedades anonimas', 'define sociedades anonimas', 'definicao sociedades anonimas', 'dizem respeito sociedades anonimas', 'sociedade anonima', 'sociedade anonima', 'define sociedades anonimas', 'define sociedade anonima', 'definicao sociedades anonimas', 'definicao sociedade anonima', 'dizem respeito sociedades anonimas', 'diz respeito sociedade anonima', 'tratam sociedades anonimas', 'tratam sociedades anonimas', 'trata sociedade anonima', 'definem sociedades anonimas', 'define sociedade anonima', 'define sociedade anonima']
+398	O que é uma Sociedade Anónima?
+	['sao sociedades anonimas', 'define sociedades anonimas', 'definicao sociedades anonimas', 'dizem respeito sociedades anonimas', 'sociedade anonima', 'sociedade anonima', 'define sociedades anonimas', 'define sociedade anonima', 'definicao sociedades anonimas', 'definicao sociedade anonima', 'dizem respeito sociedades anonimas', 'diz respeito sociedade anonima', 'tratam sociedades anonimas', 'tratam sociedades anonimas', 'trata sociedade anonima', 'definem sociedades anonimas', 'define sociedade anonima', 'define sociedade anonima']
+397	A que é que é uma Sociedade por Quotas?
+	['sao sociedades quotas', 'define sociedades quotas', 'definicao sociedades quotas', 'dizem respeito sociedades quotas', 'definem sociedades quotas', 'sao sociedades quotas', 'sociedade quotas', 'sociedade quotas', 'define sociedades quotas', 'define sociedade quotas', 'define sociedade quotas', 'definicao sociedades quotas', 'definicao sociedade quotas', 'dizem respeito sociedades quotas', 'diz respeito sociedade quotas', 'diz respeito sociedade quotas', 'definem sociedades quotas', 'define sociedade quotas', 'define sociedade quotas', 'trata sociedade quotas', 'tratam sociedades quotas']
+40	Um Certificado Digital é o quê?
+	['certificado digital', 'consiste certificado digital', 'informacoes existem acerca certificado digital', 'posso saber certificado digital']
+478	Alimento medicamentoso para animais?
+	['entende alimento medicamentoso animais', 'alimento medicamentoso animais', 'define alimento medicamentoso animais', 'consiste alimento medicamentoso animais']
+0	Gostas mais do Sporting ou do Benfica?
+	[]
+435	Significado de homologação de um curso de formação profissional?
+	['homologacao curso formacao profissional', 'significa homologacao curso formacao profissional', 'diz respeito homologacao curso formacao profissional', 'define homologacao curso formacao profissional']
+121	Para levantar o capital social da "Empresa na Hora" demora quanto tempo?
+	['possivel levantamento capital social empresa hora', 'poderei levantar capital social empresa hora', 'quanto tempo esperar levantar capital social empresa hora', 'existe algum tempo espera possibilidade levantamento capital social empresa hora']
+339	O que deve ser tido em conta pelo empregador se  houver alterações no horário de trabalho?
+	['caso alteracao horario trabalho quais procedimentos empregador deve observar', 'envolvem alteracoes feitas empregador horario trabalho', 'horario trabalho alterado procedimentos deve empregador observar', 'alteracoes horario trabalho quais sao procedimentos empregador deve observar']
+478	alimento medicamentoso para animais é o quê?
+	['entende alimento medicamentoso animais', 'alimento medicamentoso animais', 'define alimento medicamentoso animais', 'consiste alimento medicamentoso animais']
+435	Podia explicar o que quer dizer homologação de um curso de formação profissional?
+	['homologacao curso formacao profissional', 'significa homologacao curso formacao profissional', 'diz respeito homologacao curso formacao profissional', 'define homologacao curso formacao profissional']
+3	Quando é emitido o Cartão da Empresa/Cartão de Pessoa Coletiva?
+	['emitido cartao empresacartao pessoa coletiva', 'cartao empresacartao pessoa coletiva emitido', 'condicoes cartao empresacartao pessoa coletiva emitido', 'cartao empresacartao pessoa coletiva emitido ocasiao']
+426	Quando tem de ser feita a comunicação da falta justificada?
+	['deve feita comunicacao falta justificada', 'deve comunicar falta justificada', 'preciso justificar falta deve fazer comunicacao', 'ate deve feita comunicacao falta justificada']
+63	O que é um registo comercial bilingue, mesmo?
+	['consiste registo comercial bilingue', 'registo comercial bilingue', 'significa registo comercial bilingue', 'definicao registo comercial bilingue']
+3	Quando pode ser emitido o Cartão da Empresa/Cartão de Pessoa Coletiva?
+	['emitido cartao empresacartao pessoa coletiva', 'cartao empresacartao pessoa coletiva emitido', 'condicoes cartao empresacartao pessoa coletiva emitido', 'cartao empresacartao pessoa coletiva emitido ocasiao']
+81	Quais os tipos de pedidos de Registo por Depósito que são possíveis?
+	['tipo pedidos registo deposito posso efectuar', 'quais pedidos registo deposito posso efetuar', 'pedidos registo deposito sao possiveis efetuar', 'quais tipos pedidos registo deposito sao possiveis']
+319	Uma empresa pode encerrar para férias?
+	['pode empresa encerrar ferias', 'empresa pode encerrada ferias', 'possivel empresa encerrar ferias', 'possivel empresa fechar ferias']
+22	Qual o custo de constituir uma Empresa Online com Marca associada?
+	['custo constituicao empresa online empresa online marca associada', 'quanto custa constituicao empresa online empresa online marca associada', 'custo constituir empresa online empresa online marca associada', 'custo constituir empresa online empresa online marca associada']
+341	Se o período da alteração não for superior a uma semana o que se tem de fazer?
+	['alteracao nao durar semana', 'caso alteracao nao dure semana', 'alteracao durante periodo nao superior dias', 'periodo alteracao nao superar semana']
+339	Se houver alterações no horário de trabalho, quais são os procedimentos que o empregador deve ter em conta?
+	['caso alteracao horario trabalho quais procedimentos empregador deve observar', 'envolvem alteracoes feitas empregador horario trabalho', 'horario trabalho alterado procedimentos deve empregador observar', 'alteracoes horario trabalho quais sao procedimentos empregador deve observar']
+121	Para poder levantar o capital social da "Empresa na Hora" terei de esperar quanto tempo?
+	['possivel levantamento capital social empresa hora', 'poderei levantar capital social empresa hora', 'quanto tempo esperar levantar capital social empresa hora', 'existe algum tempo espera possibilidade levantamento capital social empresa hora']
+426	Uma falta justificada tem de ser comunicada quando?
+	['deve feita comunicacao falta justificada', 'deve comunicar falta justificada', 'preciso justificar falta deve fazer comunicacao', 'ate deve feita comunicacao falta justificada']
+426	Quando é que deve ser feita a comunicação da falta justificada?
+	['deve feita comunicacao falta justificada', 'deve comunicar falta justificada', 'preciso justificar falta deve fazer comunicacao', 'ate deve feita comunicacao falta justificada']
+398	Sociedades Anónimas. O que é?
+	['sao sociedades anonimas', 'define sociedades anonimas', 'definicao sociedades anonimas', 'dizem respeito sociedades anonimas', 'sociedade anonima', 'sociedade anonima', 'define sociedades anonimas', 'define sociedade anonima', 'definicao sociedades anonimas', 'definicao sociedade anonima', 'dizem respeito sociedades anonimas', 'diz respeito sociedade anonima', 'tratam sociedades anonimas', 'tratam sociedades anonimas', 'trata sociedade anonima', 'definem sociedades anonimas', 'define sociedade anonima', 'define sociedade anonima']
+341	Se o período da alteração não for superior a sete dias?
+	['alteracao nao durar semana', 'caso alteracao nao dure semana', 'alteracao durante periodo nao superior dias', 'periodo alteracao nao superar semana']
+207	Se alguém registar uma marca parecida à minha, o que devo fazer?
+	['conhecimento efectuado pedido registo marca semelhante posso fazer', 'proceder caso alguem registado marca semelhante à', 'alguem registou marca semelhante acoes tomar', 'fazer caso alguem registado marca parecida', 'soube pedido registo marca semelhante marca pertence resolver situacao']
+398	O que quer dizer Sociedades Anónimas?
+	['sao sociedades anonimas', 'define sociedades anonimas', 'definicao sociedades anonimas', 'dizem respeito sociedades anonimas', 'sociedade anonima', 'sociedade anonima', 'define sociedades anonimas', 'define sociedade anonima', 'definicao sociedades anonimas', 'definicao sociedade anonima', 'dizem respeito sociedades anonimas', 'diz respeito sociedade anonima', 'tratam sociedades anonimas', 'tratam sociedades anonimas', 'trata sociedade anonima', 'definem sociedades anonimas', 'define sociedade anonima', 'define sociedade anonima']
+43	Poderia esclarecer-me: o que é um certificado digital qualificado?
+	['é certificado digital qualificado', 'quais caracteristicas certificado digital qualificado', 'definicao certificado digital qualificado', 'caracteriza certificado digital qualificado']
+53	Como comprovo que submeti um pedido online?
+	['pode pedir certidao permanente online', 'posso pedir certidao permanente online', 'elegivel pedido certidao permanente online', 'qualquer pessoa pode pedir certidao permanente online', 'condicoes pedir certidao permanente online']
+207	O que devo fazer dado que foi pedido um registo de marca semelhante a uma marca que me pertence?
+	['conhecimento efectuado pedido registo marca semelhante posso fazer', 'proceder caso alguem registado marca semelhante à', 'alguem registou marca semelhante acoes tomar', 'fazer caso alguem registado marca parecida', 'soube pedido registo marca semelhante marca pertence resolver situacao']
+104	Será dado um comprovativo após a submissão de pedido online?
+	['apos submissao pedido online acesso algum comprovativo', 'submissao pedido online sera comprovada', 'sera dado comprovativo apos submissao pedido online', 'sera comprovada submissao pedido online']
+164	Como devo proceder para pagar?
+	['posso invalidar certificado admissibilidade', 'possivel anular certificado admissibilidade', 'condicoes poderei anular certificado admissibilidade', 'devo proceder invalidar certificado admissibilidade']
+121	Quando é que é possível proceder ao levantamento do capital social da "Empresa na Hora"?
+	['possivel levantamento capital social empresa hora', 'poderei levantar capital social empresa hora', 'quanto tempo esperar levantar capital social empresa hora', 'existe algum tempo espera possibilidade levantamento capital social empresa hora']
+22	Quanto temos de pagar para criar uma simples Empresa Online ou uma Empresa Online com marca associada?
+	['custo constituicao empresa online empresa online marca associada', 'quanto custa constituicao empresa online empresa online marca associada', 'custo constituir empresa online empresa online marca associada', 'custo constituir empresa online empresa online marca associada']
+3	Em que ocasião pode ser emitido o Cartão da Empresa/Cartão de Pessoa Coletiva em suporte físico?
+	['emitido cartao empresacartao pessoa coletiva', 'cartao empresacartao pessoa coletiva emitido', 'condicoes cartao empresacartao pessoa coletiva emitido', 'cartao empresacartao pessoa coletiva emitido ocasiao']
+43	O que quer dizer certificado digital qualificado?
+	['é certificado digital qualificado', 'quais caracteristicas certificado digital qualificado', 'definicao certificado digital qualificado', 'caracteriza certificado digital qualificado']
+319	É possível uma empresa meter férias e fechar?
+	['pode empresa encerrar ferias', 'empresa pode encerrada ferias', 'possivel empresa encerrar ferias', 'possivel empresa fechar ferias']
+106	Quais as modalidades de pagamento disponíveis?
+	['quais modalidades pagamento disponiveis', 'moldes pode feito pagamento', 'maneiras pode pagar', 'pagamento pode efetuar quais meios']
+43	O que é um certificado digital qualificado?
+	['é certificado digital qualificado', 'quais caracteristicas certificado digital qualificado', 'definicao certificado digital qualificado', 'caracteriza certificado digital qualificado']
+7	Quando é emitido o Cartão da Empresa e o Cartão de Pessoa Coletiva?
+	['cartao empresa cartao pessoa coletiva', 'define cartao empresa cartao pessoa coletiva', 'definicao cartao empresa cartao pessoa coletiva', 'diz respeito cartao empresa cartao pessoa coletiva']
+98	Poderia informar-me dos tipos de registo de depósitos disponíveis?
+	['tipo actos posso pedir', 'quais tipos actos disponiveis', 'tipo actos podem pedidos', 'tipos actos posso solicitar']
+43	Um certificado digital qualificado é o quê?
+	['é certificado digital qualificado', 'quais caracteristicas certificado digital qualificado', 'definicao certificado digital qualificado', 'caracteriza certificado digital qualificado']
+397	A que diz respeito o termos Sociedade por Quotas?
+	['sao sociedades quotas', 'define sociedades quotas', 'definicao sociedades quotas', 'dizem respeito sociedades quotas', 'definem sociedades quotas', 'sao sociedades quotas', 'sociedade quotas', 'sociedade quotas', 'define sociedades quotas', 'define sociedade quotas', 'define sociedade quotas', 'definicao sociedades quotas', 'definicao sociedade quotas', 'dizem respeito sociedades quotas', 'diz respeito sociedade quotas', 'diz respeito sociedade quotas', 'definem sociedades quotas', 'define sociedade quotas', 'define sociedade quotas', 'trata sociedade quotas', 'tratam sociedades quotas']
+478	Qual a definição de alimento medicamentoso para animais?
+	['entende alimento medicamentoso animais', 'alimento medicamentoso animais', 'define alimento medicamentoso animais', 'consiste alimento medicamentoso animais']
+15	Quais são os tipos de sociedades que podem ser constituídas através do serviço de criação de Empresa Online?
+	['tipo sociedades podem constituidas atraves servico criacao empresa online', 'quais sao tipos sociedades podem constituidas atraves servico criacao empresa online', 'tipo sociedades posso constituir atraves servico criacao empresa online', 'tipo sociedades conseguem constituir atraves servico criacao empresa online']
+207	Foi pedido um registo de marca semelhante a uma marca que me pertence. Como resolver a situação?
+	['conhecimento efectuado pedido registo marca semelhante posso fazer', 'proceder caso alguem registado marca semelhante à', 'alguem registou marca semelhante acoes tomar', 'fazer caso alguem registado marca parecida', 'soube pedido registo marca semelhante marca pertence resolver situacao']
+341	Se o período da alteração não for superior a uma semana?	['alteracao nao durar semana', 'caso alteracao nao dure semana', 'alteracao durante periodo nao superior dias', 'periodo alteracao nao superar semana']

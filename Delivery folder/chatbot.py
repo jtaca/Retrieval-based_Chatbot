@@ -8,14 +8,11 @@ import nltk
 
 #Test
 import csv
-import textdistance
-from nltk.stem.snowball import SnowballStemmer
-from math import log10
 
 
 
 # 0 for user input, 1 for file input
-input_type = 0
+input_type = 1
 stop_words_file = 'stop_words.txt'
 
 #unprocessed_questions = {}
@@ -28,7 +25,7 @@ test_for_same_answers={}
 
 questions_count = 0
 answers = {}
-test = []
+file_test = []
 stop_words = []
 
 id_questions = {}
@@ -41,7 +38,7 @@ def setup():
     global id_questions
     global questions_count
     global answers
-    global test
+    global file_test
     global stop_words
 
     root = ET.parse(sys.argv[1]).getroot()
@@ -69,7 +66,7 @@ def setup():
     if input_type == 1:
         with open(sys.argv[2], 'r', encoding='utf-8') as tests:
             for line in tests.readlines():
-                test.append(line)
+                file_test.append(line)
 
 
 def preprocess():
@@ -309,42 +306,47 @@ def Test_accuracy():
     accuracy = 0
     
     #print(test_cases)
-    
-    for answer_id, question in test_cases.items():
-        Max_score = weighted_score(id_questions,processed_answers,question)
-        same_thing = 0
-        same_thing0 = 0
-        total+=1
+    with open('results.txt', 'w', encoding='utf-8') as results_txt:
+        # for answer_id, question in test_cases.items():
+        for test_sentence in file_test:
+            Max_score = weighted_score(id_questions,processed_answers,preprocess_sentence(test_sentence))
+            same_thing = 0
+            same_thing0 = 0
+            total+=1
              
-        try:
-            test_for_same_answers = load_dict_from_file('test_for_same_answers.txt')
-            same_thing = test_for_same_answers[str(answer_id)]
-        except:
-            pass
-        try:
-            test_for_same_answers = load_dict_from_file('test_for_same_answers.txt')
-            #print(test_for_same_answers[str(Max_score[1])])
-            same_thing0 = test_for_same_answers[str(Max_score[1])]
+            # try:
+            #     test_for_same_answers = load_dict_from_file('test_for_same_answers.txt')
+            #     same_thing = test_for_same_answers[str(answer_id)]
+            # except:
+            #     pass
+            # try:
+            #     test_for_same_answers = load_dict_from_file('test_for_same_answers.txt')
+            # #print(test_for_same_answers[str(Max_score[1])])
+            #     same_thing0 = test_for_same_answers[str(Max_score[1])]
             
-        except:
-            pass
+            # except:
+            #     pass
        
-        print('Result: '+str(Max_score[1]) +' Theoric: ' +str(answer_id)+ ' , '+ str(same_thing)+ ' , '+ str(same_thing0))
-        if( Max_score[1] == answer_id or Max_score[1] == same_thing or answer_id == same_thing0):
-            right +=1
-        else:
-            print('failed')
+        # print('Result: '+str(Max_score[1]) +' Theoric: ' +str(answer_id)+ ' , '+ str(same_thing)+ ' , '+ str(same_thing0))
+            # if( Max_score[1] == answer_id or Max_score[1] == same_thing or answer_id == same_thing0):
+            #     right +=1
+                
+            # else:
+            #     pass
+
+            results_txt.write(f'{Max_score[1]}\n')
+            # print('failed')
         
-        print(question+'\n')
-        try:
-            print(id_questions[Max_score[1]][0])
-        except:
-            pass
-        print(str(Max_score)+'\n\n')
+        # print(question+'\n')
+        # try:
+        #     print(id_questions[Max_score[1]][0])
+        # except:
+        #     pass
+        # print(str(Max_score)+'\n\n')
             
-    accuracy=right/total
+    # accuracy=right/total
                     
-    print('Accuracy: '+ str(accuracy))
+    # print('Accuracy: '+ str(accuracy))
             
     
 
@@ -360,13 +362,13 @@ def Test_accuracy_txt():
         same_thing0 = 0
         
         
-        print(y[i]+'\n')
-        print(processed+'\n')
-        try:
-            print(id_questions[Max_score[1]][0])
-        except:
-            pass
-        print(str(Max_score)+'\n\n')
+        # print(y[i]+'\n')
+        # print(processed+'\n')
+        # try:
+        #     print(id_questions[Max_score[1]][0])
+        # except:
+        #     pass
+        # print(str(Max_score)+'\n\n')
         
         try:
             test_for_same_answers = load_dict_from_file('test_for_same_answers.txt')
@@ -375,19 +377,19 @@ def Test_accuracy_txt():
             pass
         try:
             test_for_same_answers = load_dict_from_file('test_for_same_answers.txt')
-            print(test_for_same_answers[str(Max_score[1])])
+            # print(test_for_same_answers[str(Max_score[1])])
             same_thing0 = test_for_same_answers[str(Max_score[1])]
             
         except:
             pass
        
-        print('Result: '+str(Max_score[1]) +' Theoric: ' +str(x[i])+ ' , '+ str(same_thing)+ ' , '+ str(same_thing0))
+        # print('Result: '+str(Max_score[1]) +' Theoric: ' +str(x[i])+ ' , '+ str(same_thing)+ ' , '+ str(same_thing0))
         if( Max_score[1] == x[i] or Max_score[1] == same_thing or x[i] == same_thing0 ):
             right +=1
         else:
             print('failed')
             
-    print('Accuracy: '+ str(right/len(y)))
+    # print('Accuracy: '+ str(right/len(y)))
     
     
 def Test_txt():
@@ -398,14 +400,14 @@ def Test_txt():
         processed = preprocess_sentence(y[i])
         Max_score = weighted_score(id_questions,processed_answers,processed)
         
-        print(y[i]+'\n')
-        print(processed+'\n')
-        try:
-            print(id_questions[Max_score[1]][0])
+        # print(y[i]+'\n')
+        # print(processed+'\n')
+        # try:
+        #     print(id_questions[Max_score[1]][0])
             #print(answers[Max_score[1]])
-        except:
-            pass
-        print(str(Max_score)+'\n\n')
+        # except:
+        #     pass
+        # print(str(Max_score)+'\n\n')
         
 
 
@@ -413,13 +415,13 @@ def Test_txt():
 
 
 def main():
-    import time
-    start_time = time.time()
+    # import time
+    # start_time = time.time()
 
     setup()
     preprocess()
     
-    setup_test() # retirar se não for para testar
+    # setup_test() # retirar se não for para testar
     
     
     compare_same_questions(id_questions,processed_answers) # change to processed_questions if not in test
@@ -452,8 +454,8 @@ def main():
     #weighted_score(processed_questions,processed_answers, 'Pode ser emitido Cartão Eletrónico da Empresa ou de Pessoa Coletiva às entidades titulares de Cartão Definitivo de Identificação de Pessoa Coletiva ou entidade equiparada, emitido antes do dia 31/12/2008 ou inscritas anteriormente a essa data?')
    
     
-    elapsed_time = time.time() - start_time
-    print('Seconds to process:'+str(elapsed_time))
+    # elapsed_time = time.time() - start_time
+    # print('Seconds to process:'+str(elapsed_time))
 
 if __name__ == '__main__':
     main()
