@@ -3,6 +3,12 @@ import re
 import numpy
 import xml.etree.ElementTree as ET
 import os
+import nltk
+from nltk.stem.snowball import SnowballStemmer
+import textdistance
+
+
+
 
 
 # 0 for user input, 1 for file input
@@ -73,12 +79,11 @@ def preprocess():
 
            id_questions[answer_id] = processed
 
-
-    
     
     
 
 def preprocess_sentence(sentence):
+    stemmer = nltk.stem.RSLPStemmer()
     sentence = re.sub(u'[ãâáàÃÂÁÀ]', 'a', sentence)
     sentence = re.sub(u'[êéèÊÉÈ]', 'e', sentence)
     sentence = re.sub(u'[îíìÎÍÌ]', 'i', sentence)
@@ -88,6 +93,11 @@ def preprocess_sentence(sentence):
 
     sentence = sentence.lower()
     sentence = re.sub(u'[\?\.!:,;\(\)-_\\\'\"ºª/]', '', sentence)
+    #stemmer não ajuda!
+    #stemmer = nltk.stem.RSLPStemmer()
+    #Podem usar o portter e o pt e ver qual é melhor
+    #sentence = stemmer.stem(sentence)
+    #sentence = SnowballStemmer("porter").stem(sentence)
 
     return sentence
 
@@ -96,8 +106,10 @@ def get_jaccard_sim(str1, str2):
     a = set(str1.split())
     b = set(str2.split())
     c = a.intersection(b)
+    
     return float(len(c)) / (len(a) + len(b) - len(c))
     
+
 
 
     
@@ -172,7 +184,7 @@ def compare_same_questions(processed_questions, processed_answers):
     #print(samei)
     
 
-def weighted_score(processed_questions,processed_answers, user_input):
+def weighted_score(id_questions,processed_answers, user_input):
    
     max_question = 0
     max_answer = 0
@@ -181,18 +193,23 @@ def weighted_score(processed_questions,processed_answers, user_input):
     score_answer ={}
     score_question = {}
     score={}
-    for id in processed_questions:
-        processed = processed_questions[id]
+    
+    for id in id_questions:
+        processed = id_questions[id]
         
         score_answer[id] = get_jaccard_sim(user_input,processed_answers[id])
         max_question = 0
         for question in processed:
-            jac_question = get_jaccard_sim(user_input,question)
+            
+            jac_question = get_jaccard_sim(user_input,question)+ textdistance.ratcliff_obershelp(user_input, question) #use for 2% more add this to report
             if (max_question < jac_question):
-                max_question = jac_question
-        score_question[id] = max_question
+                    max_question = jac_question
+            score_question[id] = max_question
+            
+            
+            
         
-    for i in processed_questions:
+    for i in id_questions:
         try:
             same_question_id[i]+=1
             same_question_id[i]-=1
@@ -202,8 +219,11 @@ def weighted_score(processed_questions,processed_answers, user_input):
     #print(same_question_id)
     #print(score_answer)
     #print(score_question)
-    for ida in processed_questions:
+    for ida in id_questions:
         score[ida] = score_answer[ida]*0.3 +  score_question[ida]*0.4 + same_question_id[ida]* 0.3
+        #if(score_question[ida]== 1):
+            #print('bad id: '+str(ida))
+        #print( ida + '[ score_answer: '+ str(score_answer[ida]) +', score_question: '+ str(score_question[ida])+ ', same_question_id: '+ str(same_question_id[ida])+', Final Score: '+ str(score[ida])+' ]')
         #print( ida + '[ score_answer: '+ str(score_answer[ida]) +', score_question: '+ str(score_question[ida])+ ', same_question_id: '+ str(same_question_id[ida])+' ]')
         if(max_score < score[ida]):
             max_score = score[ida]
@@ -242,33 +262,34 @@ def Test_accuracy():
     total = 0
     accuracy = 0
     
-    for answer_id, questions in id_questions.items():
-        for question in questions:
-            Max_score = weighted_score(id_questions,processed_answers,question)
-            same_thing = 0
-            same_thing0 = 0
-            total+=1
-                 
-            try:
-                test_for_same_answers = load_dict_from_file('test_for_same_answers.txt')
-                same_thing = test_for_same_answers[str(answer_id)]
-            except:
-                pass
-            try:
-                test_for_same_answers = load_dict_from_file('test_for_same_answers.txt')
-                print(test_for_same_answers[str(Max_score[1])])
-                same_thing0 = test_for_same_answers[str(Max_score[1])]
-                
-            except:
-                pass
-           
-            print('Result: '+str(Max_score[1]) +' Theoric: ' +str(answer_id)+ ' , '+ str(same_thing)+ ' , '+ str(same_thing0))
-            if( Max_score[1] == answer_id or Max_score[1] == same_thing or answer_id == same_thing0):
-                right +=1
-            else:
-                print('failed')
-                
-            accuracy=right/total
+    #print(test_cases)
+    
+    for answer_id, question in test_cases.items():
+        Max_score = weighted_score(id_questions,processed_answers,question)
+        same_thing = 0
+        same_thing0 = 0
+        total+=1
+             
+        try:
+            test_for_same_answers = load_dict_from_file('test_for_same_answers.txt')
+            same_thing = test_for_same_answers[str(answer_id)]
+        except:
+            pass
+        try:
+            test_for_same_answers = load_dict_from_file('test_for_same_answers.txt')
+            #print(test_for_same_answers[str(Max_score[1])])
+            same_thing0 = test_for_same_answers[str(Max_score[1])]
+            
+        except:
+            pass
+       
+        print('Result: '+str(Max_score[1]) +' Theoric: ' +str(answer_id)+ ' , '+ str(same_thing)+ ' , '+ str(same_thing0))
+        if( Max_score[1] == answer_id or Max_score[1] == same_thing or answer_id == same_thing0):
+            right +=1
+        else:
+            print('failed')
+            
+        accuracy=right/total
                     
     print('Accuracy: '+ str(accuracy))
             
@@ -316,8 +337,9 @@ def main():
     
     setup_test() # retirar se não for para testar
     
-   
+    
     compare_same_questions(id_questions,processed_answers) # change to processed_questions if not in test
+    
     
     Test_accuracy()
     Test_accuracy_txt()
