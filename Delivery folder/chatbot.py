@@ -290,7 +290,7 @@ def Test_accuracy():
     total = 0
     accuracy = 0
 
-    with open('results.txt', 'w', encoding='utf-8') as results_txt:
+    with open('resultados.txt', 'w', encoding='utf-8') as results_txt:
         for test_sentence in file_test:
             Max_score = weighted_score(
                 id_questions, processed_answers, preprocess_sentence(test_sentence))
