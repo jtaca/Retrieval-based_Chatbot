@@ -246,21 +246,28 @@ def Test_accuracy():
         for question in questions:
             Max_score = weighted_score(id_questions,processed_answers,question)
             same_thing = 0
+            same_thing0 = 0
             total+=1
                  
             try:
                 test_for_same_answers = load_dict_from_file('test_for_same_answers.txt')
-                print(test_for_same_answers)
                 same_thing = test_for_same_answers[str(answer_id)]
+            except:
+                pass
+            try:
+                test_for_same_answers = load_dict_from_file('test_for_same_answers.txt')
+                print(test_for_same_answers[str(Max_score[1])])
+                same_thing0 = test_for_same_answers[str(Max_score[1])]
                 
             except:
                 pass
            
-            print('Result: '+str(Max_score[1]) +' Theoric: ' +str(answer_id)+ ' , '+ str(same_thing))
-            if( Max_score[1] == answer_id or Max_score[1] == same_thing):
+            print('Result: '+str(Max_score[1]) +' Theoric: ' +str(answer_id)+ ' , '+ str(same_thing)+ ' , '+ str(same_thing0))
+            if( Max_score[1] == answer_id or Max_score[1] == same_thing or answer_id == same_thing0):
                 right +=1
             else:
                 print('failed')
+                
             accuracy=right/total
                     
     print('Accuracy: '+ str(accuracy))
@@ -273,17 +280,25 @@ def Test_accuracy_txt():
     right = 0
     for i in range(len(y)):
         processed = preprocess_sentence(y[i])
-        Max_score = weighted_score(processed_questions,processed_answers,processed)
+        Max_score = weighted_score(id_questions,processed_answers,processed)
         
         same_thing = 0
-         
+        same_thing0 = 0
         try:
+            test_for_same_answers = load_dict_from_file('test_for_same_answers.txt')
             same_thing = test_for_same_answers[str(x[i])]
         except:
             pass
+        try:
+            test_for_same_answers = load_dict_from_file('test_for_same_answers.txt')
+            print(test_for_same_answers[str(Max_score[1])])
+            same_thing0 = test_for_same_answers[str(Max_score[1])]
+            
+        except:
+            pass
        
-        print('Result: '+str(Max_score[1]) +' Theoric: ' +str(x[i])+ ' , '+ str(same_thing))
-        if( Max_score[1] == x[i] or Max_score[1] == same_thing):
+        print('Result: '+str(Max_score[1]) +' Theoric: ' +str(x[i])+ ' , '+ str(same_thing)+ ' , '+ str(same_thing0))
+        if( Max_score[1] == x[i] or Max_score[1] == same_thing or x[i] == same_thing0 ):
             right +=1
         else:
             print('failed')
@@ -305,6 +320,7 @@ def main():
     compare_same_questions(id_questions,processed_answers) # change to processed_questions if not in test
     
     Test_accuracy()
+    Test_accuracy_txt()
     
     
     ##test if user string is null or ''
