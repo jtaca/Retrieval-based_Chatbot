@@ -2,13 +2,11 @@ import re
 import nltk
 import numpy
 from sklearn.feature_extraction.text import TfidfVectorizer
+import string
 
-di = {'asda': 123, 'www': 3}
-for k, v in di.items():
-    print(f'{k} {v}')
-di['www'] = -11
-for k, v in di.items():
-    print(f'{k} {v}')
+test = 'abc \?\.!:,;\(\)-_\\\'\"ºª/ def'
+print(test)
+print(test.translate(str.maketrans('', '', string.punctuation)))
 
 # corpus = ['This is the first document.', 'This document is the second document.', 'And this is the third one.', 'Is this the first document?']
 #corpus = ['This is the first document.', 'This document is the second document.']
