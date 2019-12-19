@@ -1,3 +1,3 @@
 # Natural_Language-HW-
 
-The chatbot delivered for final acessment is in the Final Delivery folder.
+The chatbot delivered for final assessment is in the Delivery folder.
